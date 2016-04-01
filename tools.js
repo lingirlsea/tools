@@ -18,7 +18,7 @@ var tools = {
 
 	  var top, scrollTop, range, step;
 	  
-	  top = $(targetID).offset().top + 11 - fromTop || 0;
+	  top = $(targetID).offset().top + 11 - (fromTop || 0);
 	  scrollTop = $(document).scrollTop();
 	  range = scrollTop - top;
 	  
