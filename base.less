@@ -1,0 +1,52 @@
+// 清除浮动
+.clearfix:after {
+  display: block;
+  content: "\200B";
+  height: 0;
+  clear: both;
+}
+
+// 三角箭头 
+.arrow {
+  &:before,
+  &:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 15px solid;
+    content: '\200B';
+  }
+  &:before {
+    top: 10px;
+    left: -30px;
+    width: 0;
+    // 下箭头 -- 左箭头 -- 上箭头 -- 右箭头
+    border-color: transparent pink transparent transparent;
+  }
+  &:after {
+    top: 10px;
+    left: -28px;
+    // 下箭头 -- 左箭头 -- 上箭头 -- 右箭头
+    border-color: transparent #ccc transparent transparent;
+  }
+}
+
+// 水平垂直居中任意元素
+#div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  background-color: #ccc;
+}
+
+// 水平垂直居中一个 <img> 标签
+.container { /*--父元素--*/
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
