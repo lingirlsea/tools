@@ -8,22 +8,22 @@
 
 // 三角箭头 
 .arrow {
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     position: absolute;
     width: 0;
     height: 0;
     border: 15px solid;
     content: '\200B';
   }
-  &:before {
+  &::before {
     top: 10px;
     left: -30px;
     width: 0;
     // 下箭头 -- 左箭头 -- 上箭头 -- 右箭头
     border-color: transparent pink transparent transparent;
   }
-  &:after {
+  &::after {
     top: 10px;
     left: -28px;
     // 下箭头 -- 左箭头 -- 上箭头 -- 右箭头
