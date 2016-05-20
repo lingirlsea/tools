@@ -32,7 +32,13 @@ var tools = {
 	      $(document).scrollTop(range + top);
 	    }
 	  }, parseInt((time || 300) / 20) );
-	}
+	};
+
+	isIE: function(ver) {
+		var b = document.createElement('b');
+    b.innerHTML = '<!--[if IE ' + ver + ']><i></i><![endif]-->';
+    return b.getElementsByTagName('i').length === 1;
+	};
 	
 };
 
