@@ -11,24 +11,7 @@ function hasAnother(str) {
 	return !/^.*(.).*\1/i.test(str);
 }
 
+// http://stackoverflow.com/questions/7202157/why-does-return-the-string-10
+++[[]][+[]]+[+[]] == 10 // true
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Array.apply(null, Array(3)).map(Function.prototype.call.bind(Number)); // [0, 1, 2]
